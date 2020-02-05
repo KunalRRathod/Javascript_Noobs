@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <form>
+            <input type="button" id="firstbtn" value="OK">
+            <input type="button" id="secondbtn" value="OK">
+        </form>
+        <p>Click th button to disable the first button above</p>
+        <button onclick="disableElement()">Disable Button </button>
+        <button onclick="enableElement()">Enable Button</button>
+        <script>
+        function disableElement()
+        
+        {
+            document.getElementById("firstbtn").disabled=true;
+
+        }
+        function enableElement()
+        {
+            document.getElementById("secondbtn").disabled=false;
+        }
+        </script>
+    </body>
+</html>
