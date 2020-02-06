@@ -1,0 +1,25 @@
+// create table in javascript//
+<html>
+    <head>
+        <script>
+            var x = 1;
+            // create function insert row //
+            function insRow() {
+                var t = document.getElementById('My Table').insertRow(-1); // inserting data at bottom //
+                var y = t.insertCell(0);
+                var z = t.insertCell(1);
+                var k = t.insertCell(2);
+                y.innerHTML = x++;
+                z.innerHTML = x++;
+                k.innerHTML = x++; 
+
+            }
+            </script>
+
+    </head>
+    <body>
+    <table id = "My Table" border="1"></table>
+    <br>
+    <input type="button" onclick="insRow()" value="Insert Row">
+    </body>
+</html>
